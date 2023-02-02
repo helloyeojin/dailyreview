@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!--DTD: 문서형 정의-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>230201 수업내용</title>
+</head>
+<body>
+  <!-- 이렇게 하면 주석을 달 수 있습니다 -->
+  <!-- alt+shift+A -->
+  <!-- 배포할 때에는 주석 처리된 거는 빼고 해야됩니다 -->
+
+  <h1>hello</h1><h2>world</h2>
+  <!-- 블록요소는 공간 유무와 상관없이 사용할 때마다 줄이 바꿔짐! 위의 경우 태그를 붙여서 썼음에도 줄이 바꿔지게 됨-->
+  <h3 title="h3 태그로 작성">h3입니다</h3> <!-- 툴팁 -->
+
+  <hr>
+
+  <img src="images/BBB.jpg" alt="BBB">
+  <!-- 만약에 사진이 html 문서랑 같은 폴더가 아니라 images라는 폴더에 들어가게 되면 <img src="images/BBB.jpg" 이런 식으로 써주면 됨 --> 
+    <br>
+    <a href="https://www.naver.com" target="_blank">밤빵</a><br>
+    <!-- _blank를 사용하면 입력 시 새 창으로 열립니다 -->
+    <!-- <a href="대상 경로(링크)"> <img src="이미지 경로" alt="대체 텍스트"></a> #이미지 경로 -->
+  
+  <ins>세계 최고의 고양이</ins><br> <!-- 밑줄 -->
+  <del>우리 돼지</del><br>
+
+  <strong>교자만두 고양이 너무 귀여웡</strong><br> <!-- 굵게 강조(화면낭독기에서 강조하여 읽어주고 중첩가능) -->
+ 
+  <b>포춘쿠키 고양이</b><br> <!-- 이건 그냥 굵게 강조 -->
+
+  <em>기울어진 글씨를 써봐요</em><br>
+  <sub>아래 첨자</sub>가 머야<br>
+  <sup>위 첨자</sup>는 머야<br><br>
+
+  <!-- 목록 만들기 -->
+  <Ul>
+    <li>비순서 목록 만들기</li>
+    <li>점 찍힌 리스트임</li>
+  </Ul><br>
+
+  <Ol>
+    <li>이거는 순서 리스트</li>
+    <li>무슨 차이가 잇을가요</li>
+  </Ol><br>
+
+  <dl>
+    <dt>내용을 쓰라는디</dt>
+    <dd>내용 설명이라는디</dd>
+  </dl><br>
+
+  <form action="" autocomplete="on">
+    <fieldset>
+    <legned>기본정보</legned>
+    <label for ="id">아이디</label> <!-- id 요런거는 html의 input 타입? -->
+    <input type="text" id="id" placeholder="아이디를 입력해주세요.">
+    <label for ="pw">비밀번호</label>
+    <input type="password" id="pw" placeholder="비밀번호를 입력해주세요.">
+    <input type="submit" value="로그인">
+    </fieldset>
+  </form><br>
+
+  <!-- 표만들기~~~! -->
+  <table border="1">
+    <th>테이블</th>
+    <th>만들기</th>
+    <tr><!-- 첫번째 줄 시작 -->
+        <td>첫번째 칸</td>
+        <td>두번째 칸</td>
+    </tr><!-- 첫번째 줄 끝 -->
+    <tr><!-- 두번째 줄 시작 -->
+        <td>첫번째 칸</td>
+        <td>두번째 칸</td>
+    </tr><!-- 두번째 줄 끝 -->
+  </table><br>
+
+  FIXME: TODO:
+
+</body>
+</html>
