@@ -211,7 +211,7 @@ video {
 
 .full_image {
   width: 100%;
-  margin: 100px 0 60px 0;
+  margin: 130px 0 60px 0;
 }
 
 @media (max-width: 1200px) {
@@ -220,15 +220,16 @@ video {
   }
 }
 
-h1 {
+h2 {
   font-weight: 900;
   font-size: 50px;
   text-align: center;
 }
 
-h2 {
-  font-weight: 500;
+h3 {
+  font-weight: 700;
   font-size: 21px;
+  margin-bottom: 5px;
 }
 
 .phrase {
@@ -238,10 +239,11 @@ h2 {
 
 .buttons {
   margin-top: 40px;
-  margin-bottom: 200px;
+  margin-bottom: 130px;
 }
 
 .buttons > a {
+  display: inline-block;
   border: 1px solid black;
   background-color: black;
   color: white;
@@ -256,6 +258,7 @@ h2 {
   background-color:rgb(91, 91, 91);
   border: 1px solid rgb(91, 91, 91);
 }
+
 .buttons > a:not(:last-child) {
   margin-right: 5px; 
 }
@@ -265,8 +268,6 @@ h2 {
   column-gap: 10px;
   display: flex;
   flex-direction: columns;
-  margin-top: 120px;
-  margin-bottom: 50px;
 }
 
 .gallery > div {
@@ -284,4 +285,5 @@ figcaption {
   padding: 5px;
   margin-top: 20px;
   text-align: left;
+  word-break: keep-all;
 }
