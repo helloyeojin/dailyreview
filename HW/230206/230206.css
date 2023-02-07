@@ -1,7 +1,7 @@
 html {
-  margin: 0, 
+  margin: 0;
   padding: 0;
-  height: 100%
+  height: 100%;
 }
 
 body {
@@ -13,19 +13,26 @@ body {
 }
 
 nav {
-  width: 16.5%;
+  position: fixed;
+  width: 244px;
   height: 100%;
-  padding: 16px 0 20px 12px;
-  float:left;
+  padding: 16px 12px 20px 12px;
+  float: left;
   display: flex;
   flex-direction: column;
   background-color: white;
-  align-items: left;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+}
+
+video {
+  margin: 0;
+  padding: 0;
 }
 
 .logo_home {
   padding: 10px 2.5px 10px;
-  margin: 2px 3px 21px 2px;
+  margin: 2px 3px 19px 2px;
 }
 
 .logo_home img {
@@ -36,16 +43,16 @@ nav {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin-bottom: 215px;
+  margin-bottom: 218px;
+  font-size: 16px;
 }
 
 .SideMenu div {
-  width: 195px;
+  width: 196px;
   display: flex;
   align-items: center;
-  padding: 12px 2px 12px 10px;
-  margin-bottom: 9.5px;
-  margin-left: 3px;
+  padding: 12px;
+  margin: 2px 0 7px;
   border-radius: 24px;
 }
 
@@ -55,19 +62,17 @@ nav {
 
 .SideMenu img {
   width: 22px;
-  margin-right: 17px;
+  height: 22px;
+  padding: 0 17px 1px 1px;
 }
 
-.SideMenu a {
-  margin-top: 3px;
-}
-
-.more{
+.more {
   display: flex;
   align-items: center;
-  width: 195px;
+  width: 220px;
   padding: 12px 2px 12px 10px;
   border-radius: 24px;
+  box-sizing: border-box;
 }
 
 .more:hover {
@@ -81,22 +86,24 @@ nav {
 }
 
 section {
-  width: 83.5%;
+  width: 853px;
   float: left;
   background-color: white;
-  margin: 0 179px;
+  margin: 0 186.5px 0 423.5px;
   display: flex;
   flex-direction: row;
 }
 
-.post {
-  background: lavender;
+.feed {
+  background: white;
   width: 470px;
+  margin: 10px 64px 0 0;
 }
 
 aside {
   background: lemonchiffon;
-  width: 230px;
+  width: 319px;
+  padding-top: 30px;
 }
 
 .story {
@@ -104,36 +111,219 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   width: 470px;
-  margin-top: 50px;
+  margin: 22px 0 15px 0;
+  padding: 16px 0;
+  box-sizing: border-box;
 }
 
 .story > figure {
-  display: flex;
+  margin: 0;
+  padding: 0 6px;
+  display: inline-flex;
   flex-direction: column;
-  width: 64px;
+  justify-content: space-between;
+  align-items: center;
+  width: 56px;
+  height: 84px;
 }
 
 .story figcaption {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 13px;
-  width: 64px;
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.storyImgBg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 59px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      to bottom left,
+      #b921ff 0%,
+      rgba(255, 15, 107, 0.929) 35%,
+      orange 60%,
+      #ffeca6 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .storyimg {
   position: relative;
   width: 56px;
   height: 56px;
-  margin-bottom: 3px
-  border: 3px solid transparent;
   border-radius: 50%;
-  background-image: linear-gradient(#fff, #fff), 
-  linear-gradient(to bottom left, #b921ff 0%, rgba(255, 15, 107, 0.929) 35%, orange 60%, #ffeca6 100%);
+}
+
+.post {
+  width: 470px;
+  margin-top: 15px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user {
+  width: 100%;
+  height: 56px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userImg {
+  width: 32px;
+  height: 32px;
+  border: 0.5px solid #ddd;
+  border-radius: 50%;
+}
+
+.userStory {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      to bottom left,
+      #b921ff 0%,
+      rgba(255, 15, 107, 0.929) 35%,
+      orange 60%,
+      #ffeca6 100%
+    );
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
 
-post {
+.userName {
+  width: 380px;
+  height: 40px;
+  margin: 0 20px 0 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 630;
+}
+
+.userName > a {
+  display: inline-block;
+  margin: 0 3px 0 0;
+}
+
+.minor {
+  display: inline-block;
+  color: rgb(126, 126, 126);
+  font-size: 14px;
+}
+
+.ddd {
+  width: 16px;
+  height: 16px;
+  padding: 0 3px 0 4px;
+}
+
+.gallery {
+  margin: 0;
+  padding: 0;
   width: 470px;
+  border-radius: 3px;
+}
+
+.function {
+  padding: 0 0 6px;
+  width: 470px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.function img {
+  width: 22px;
+  height: 22px;
+}
+
+.function img:last-child {
+  padding-left: 318px;
+}
+
+.function img:not(:last-child) {
+  margin-right: 8px;
+}
+
+.like {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 470px;
+  height: 18px;
+  margin-bottom: 8px;
+}
+
+.like img {
+  border-radius: 50px;
+  width: 14px;
+  padding: 0 0 2px 0;
+  margin: 0 4px 0 0;
+  border: 0.5px solid #ddd;
+}
+
+.userEdit {
+  width: 470px;
+  height: 18px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.userEdit p {
+  font-size: 14px;
+}
+
+.editID {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 630;
+  color: black;
+  padding-right: 5px;
+}
+
+.edit > a {
+  margin-bottom: 6px;
+}
+
+.smiley {
+  width: 470px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smiley img {
+  width: 11px;
+  padding-bottom: 1px;
+  opacity: 0.5;
+}
+
+.front {
+  padding-right: 13px;
+}
+
+.hashtag {
+  color: rgb(0, 0, 123);
+  font-weight: 500;
+}
+
+aside {
+  width: 319px;
 }
