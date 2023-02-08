@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>별 찍기</title>
+  </head>
+  <body>
+    <script>
+      var N;
+
+      N = prompt(
+        "몇 줄의 별을 찍을까욘? 1부터 100 사이의 수를 입력해주세요.",
+        ""
+      );
+
+      for (var i = 1; i <= N; i++) {
+        for (var j = 1; j <= i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
+<!-- https://velog.io/@rkio/%EB%B0%B1%EC%A4%80-Javascript-2438 -->
