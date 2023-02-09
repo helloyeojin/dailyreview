@@ -19,69 +19,68 @@
         </a>
       </div>
       <div class="SideMenu">
-        <div href="https://www.instagram.com/">
+        <a href="https://www.instagram.com/">
           <img
             src="https://cdn-icons-png.flaticon.com/512/5948/5948524.png"
             alt="icons_home"
-          />
-          <a>홈</a>
-        </div>
-        <div href="https://www.instagram.com/#">
+          /><span>홈</span>
+        </a>
+        <a href="https://www.instagram.com/#">
           <img
             src="https://cdn-icons-png.flaticon.com/512/5948/5948534.png"
             alt="icons_search"
           />
-          <a>검색</a>
-        </div>
-        <div href="https://www.instagram.com/explore/">
+          <span>검색</span>
+        </a>
+        <a href="https://www.instagram.com/explore/">
           <img
             src="https://cdn-icons-png.flaticon.com/512/5949/5949272.png"
             alt="icons_explore"
           />
-          <a>탐색 탭</a>
-        </div>
-        <div href="https://www.instagram.com/reels/videos/">
+          <span>탐색 탭</span>
+        </a>
+        <a href="https://www.instagram.com/reels/videos/">
           <img
             src="https://cdn-icons-png.flaticon.com/512/5948/5948543.png"
             alt="icons_reels"
           />
-          <a>릴스</a>
-        </div>
-        <div href="https://www.instagram.com/direct/inbox/">
+          <span>릴스</span>
+        </a>
+        <a href="https://www.instagram.com/direct/inbox/">
           <img
             src="https://cdn-icons-png.flaticon.com/512/5948/5948572.png"
             alt="icons_message"
           />
-          <a>메시지</a>
-        </div>
-        <div href="https://www.instagram.com/direct/inbox/#">
+          <span>메시지</span>
+        </a>
+        <a href="https://www.instagram.com/direct/inbox/#">
           <img
             src="https://cdn-icons-png.flaticon.com/512/5948/5948503.png"
             alt="icons_notification"
           />
-          <a>알림</a>
-        </div>
-        <div href="#">
+          <span>알림</span>
+        </a>
+        <a href="#">
           <img
             src="https://cdn-icons-png.flaticon.com/512/5948/5948495.png"
             alt="icons_post"
           />
-          <a>만들기</a>
-        </div>
-        <div href="https://www.instagram.com/dontasktwicethreetimes/">
+          <span>만들기</span>
+        </a>
+        <a href="https://www.instagram.com/dontasktwicethreetimes/">
           <img src="/images/sunlight.png" alt="profile_image" />
-          <a>프로필</a>
-        </div>
+          <span>프로필</span>
+        </a>
       </div>
-      <div class="more" href="#">
+      <a class="more" href="#">
         <img
           src="https://cdn-icons-png.flaticon.com/512/5948/5948791.png"
           alt="icons_more"
         />
-        <a>더 보기</a>
-      </div>
+        <span>더 보기</span>
+      </a>
     </nav>
-    <section>
+    <section class="mainSection">
       <div class="feed">
         <div class="story">
           <figure>
@@ -127,12 +126,12 @@
         </div>
         <div class="post">
           <div class="user">
-            <span class="userStory">
+            <a href="https://www.instagram.com/jenaissante/" class="userStory">
               <img src="/images/yunjin.png" alt="jenaissante" class="userImg" />
-            </span>
+            </a>
             <div class="userName">
-              <a>jenaissante</a>
-              <span class="minor"><a>∙ 23시간</a></span>
+              <a href="https://www.instagram.com/jenaissante/">jenaissante</a>
+              <span class="minor">∙ 23시간</span>
             </div>
             <img
               src="https://cdn-icons-png.flaticon.com/512/512/512142.png"
@@ -140,11 +139,43 @@
               class="ddd"
             />
           </div>
-          <img
-            src="https://pbs.twimg.com/media/FnpI1KJaEAA1tj0?format=jpg&name=large"
-            alt="yunjin"
-            class="gallery"
-          />
+
+          <div class="slider">
+            <input type="radio" name="slide" id="slide1" checked />
+            <input type="radio" name="slide" id="slide2" />
+            <input type="radio" name="slide" id="slide3" />
+            <input type="radio" name="slide" id="slide4" />
+            <div class="sldBx">
+              <ul class="slideImgs">
+                <li>
+                  <img
+                    src="https://pbs.twimg.com/media/FnnsKwQaIAAY-mc?format=jpg&name=large"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://pbs.twimg.com/media/FnnsKwPagAM8IT-?format=jpg&name=large"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://pbs.twimg.com/media/FnnsKwPaUAMv58h?format=jpg&name=large"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://pbs.twimg.com/media/FnnsKwRacAEz46l?format=jpg&name=large"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="bullets">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+              <label for="slide4"></label>
+            </div>
+          </div>
           <div class="function">
             <img
               src="https://cdn-icons-png.flaticon.com/512/5948/5948503.png"
@@ -165,7 +196,7 @@
           </div>
           <div class="like">
             <img src="/images/kazuha.png" alt="kazuha" />
-            <a><b> k_a_z_u_h_a__</b>님 <b>외 213.9만명</b>이 좋아합니다</a>
+            <span><a href ="https://www.instagram.com/k_a_z_u_h_a__/" class="likeUser"> k_a_z_u_h_a__</a>님 <b>외 213.9만명</b>이 좋아합니다</span>
           </div>
           <div class="edit">
             <div class="userEdit">
@@ -187,14 +218,15 @@
         </div>
         <div class="post">
           <div class="user">
-            <img
-              src="/images/le_sserafim.png"
-              alt="le_sserafim"
-              class="userImg"
-            />
+            <a href="https://www.instagram.com/le_sserafim/">
+              <img
+                src="/images/le_sserafim.png"
+                alt="le_sserafim"
+                class="userImg"
+              /></a>
             <div class="userName">
-              <a>le_sserafim</a>
-              <span class="minor"><a>∙ 1일</a></span>
+              <a href="https://www.instagram.com/le_sserafim/">le_sserafim</a>
+              <span class="minor">∙ 1일</span>
             </div>
             <img
               src="https://cdn-icons-png.flaticon.com/512/512/512142.png"
@@ -230,7 +262,7 @@
           </div>
           <div class="like">
             <img src="/images/sunlight.png" alt="marronbread" />
-            <a><b> marronbread</b>님 <b>외 170.8만명</b>이 좋아합니다</a>
+            <span><a href ="https://www.instagram.com/_chaechae_1/" class="likeUser">_chaechae_1</a>님 <b>외 170.8만명</b>이 좋아합니다</span>
           </div>
           <div class="edit">
             <div class="userEdit">
@@ -239,7 +271,7 @@
               >
               <p class="front">
                 What you lookin’ at?🕶
-                <span class="hashtag">#FEARLESS_JP</span> ...<span
+                <a href="https://www.instagram.com/explore/tags/fearless_jp/"><span class="hashtag">#FEARLESS_JP</span></a> ...<span
                   class="minor"
                 >
                   더 보기</span
@@ -259,8 +291,101 @@
       </div>
 
       <aside>
-        <a>친구추천</a>
-        <footer>footer</footer>
+        <section class="myProfile">
+          <img src="/images/sunlight.png"/ class="storyimg">
+          <a href="#" class="userName">marronbread</a>
+        </section>
+        <section class="rcmd">
+          <div class="line1">
+            <h5 class="minor">회원님을 위한 추천</h5>
+            <a href="#">모두 보기</a>
+          </div>
+          <ul class="rcmdUser">
+            <li class="follow">
+              <div class="liProfile">
+                <img
+                src="/images/newjeans.png"
+                alt="NewJeansOfficial"
+                class="userImg"
+                />
+                <div>
+                  <a href="https://www.instagram.com/newjeans_official/" class="friendName">newjeans_official</a>
+                  <span class="minorx2">wannagohome님 외 1명이 팔로우합니다</span>
+                </div>
+              </div>
+              <span class="btn">팔로우</span>
+            </li>
+            <li class="follow">
+              <div class="liProfile">
+                <img
+                src="/images/ive.jpeg"
+                alt="iveStarship"
+                class="userImg"
+                />
+                <div>
+                  <a href="https://www.instagram.com/ivestarship/" class="friendName">ivestarship</a>
+                  <span class="minorx2">회원님을 위한 추천</span>
+                </div>
+              </div>
+              <span class="btn">팔로우</span>
+            </li>
+            <li class="follow">
+              <div class="liProfile">
+                <img
+                src="/images/wonyoung.png"
+                alt="wonyoung"
+                class="userImg"
+                />
+                <div>
+                  <a href="https://www.instagram.com/for_everyoung10/" class="friendName">for_everyoung10</a>
+                  <span class="minorx2">회원님을 위한 추천</span>
+                </div>
+              </div>
+              <span class="btn">팔로우</span>
+            </li>
+            <li class="follow">
+              <div class="liProfile">
+                <img
+                src="/images/yujin.jpeg"
+                alt="yujin"
+                class="userImg"
+                />
+                <div>
+                  <a href="https://www.instagram.com/_yujin_an/" class="friendName">_yujin_an</a>
+                  <span class="minorx2">_chaechae_1님 외 3명이 팔로우합니다</span>
+                </div>
+              </div>
+              <span class="btn">팔로우</span>
+            </li>
+            <li class="follow">
+              <div class="liProfile">
+                <img
+                src="/images/eunbi.jpeg"
+                alt="eunbi"
+                class="userImg"
+                />
+                <div>
+                  <a href="https://www.instagram.com/silver_rain.__/" class="friendName">silver_rain.__</a>
+                  <span class="minorx2">letmesleepplz님 외 1명이 팔로우합니다</span>
+                </div>
+              </div>
+              <span class="btn">팔로우</span>
+            </li>
+        </section>
+        <footer>
+          <ul class="ftrBox">
+            <li><a href="https://about.instagram.com/">소개</a></li>
+            <li><a href="https://help.instagram.com/">도움말</a></li>
+            <li><a href="https://about.instagram.com/blog/">홍보센터</a></li>
+            <li><a href="https://developers.facebook.com/docs/instagram">API</a></li>
+            <li><a href="https://www.instagram.com/about/jobs/">채용 정보</a></li>
+            <li><a href="https://www.instagram.com/legal/privacy/">개인정보처리방침</a></li>
+            <li><a href="https://www.instagram.com/legal/terms/">약관</a></li>
+            <li><a href="https://www.instagram.com/explore/locations/">위치</a></li>
+            <li><a href="#">언어</a></li>
+          </ul>
+          <span>© 2023 INSTAGRAM FROM META</span>
+        </footer>
       </aside>
     </section>
   </body>

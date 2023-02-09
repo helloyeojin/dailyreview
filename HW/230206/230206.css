@@ -23,11 +23,36 @@ nav {
   background-color: white;
   box-sizing: border-box;
   border-right: 1px solid #ddd;
+  z-index: 900;
 }
 
 video {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  padding: 0;
+  margin: 0;
 }
 
 .logo_home {
@@ -47,7 +72,7 @@ video {
   font-size: 16px;
 }
 
-.SideMenu div {
+.SideMenu a {
   width: 196px;
   display: flex;
   align-items: center;
@@ -56,7 +81,7 @@ video {
   border-radius: 24px;
 }
 
-.SideMenu div:hover {
+.SideMenu a:hover {
   background-color: rgba(128, 128, 128, 0.054);
 }
 
@@ -85,11 +110,11 @@ video {
   padding: 0 0 2px 3px;
 }
 
-section {
+.mainSection {
   width: 853px;
   float: left;
   background-color: white;
-  margin: 0 186.5px 0 423.5px;
+  margin: 0 186.5px 0 431.5px;
   display: flex;
   flex-direction: row;
 }
@@ -101,7 +126,7 @@ section {
 }
 
 aside {
-  background: lemonchiffon;
+  background: #fff;
   width: 319px;
   padding-top: 30px;
 }
@@ -210,11 +235,13 @@ aside {
   align-items: center;
   font-size: 15px;
   font-weight: 630;
+  color: black;
 }
 
-.userName > a {
+.userName a {
   display: inline-block;
   margin: 0 3px 0 0;
+  color: black;
 }
 
 .minor {
@@ -227,6 +254,118 @@ aside {
   width: 16px;
   height: 16px;
   padding: 0 3px 0 4px;
+}
+
+.slider {
+  display: inline-block;
+  width: 470px;
+  height: 588px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden; /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */
+}
+.slider input[type="radio"] {
+  display: none;
+}
+
+.sldBx {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+ul.slideImgs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 400%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.slideImgs li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.slideImgs img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  z-index: 2;
+}
+
+.bullets label {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.49);
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+}
+
+/* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
+.slider
+  input[type="radio"]:nth-child(1):checked
+  ~ .bullets
+  > label:nth-child(1) {
+  background-color: #fff;
+}
+
+.slider
+  input[type="radio"]:nth-child(2):checked
+  ~ .bullets
+  > label:nth-child(2) {
+  background-color: #fff;
+}
+
+.slider
+  input[type="radio"]:nth-child(3):checked
+  ~ .bullets
+  > label:nth-child(3) {
+  background-color: #fff;
+}
+
+.slider
+  input[type="radio"]:nth-child(4):checked
+  ~ .bullets
+  > label:nth-child(4) {
+  background-color: #fff;
+}
+
+.slider input[type="radio"]:nth-child(1):checked ~ .sldBx > .slideImgs {
+  left: 0;
+  transition: 0.5s;
+}
+
+.slider input[type="radio"]:nth-child(2):checked ~ .sldBx > .slideImgs {
+  left: -470px;
+  transition: 0.5s;
+}
+
+.slider input[type="radio"]:nth-child(3):checked ~ .sldBx > .slideImgs {
+  left: -940px;
+  transition: 0.5s;
+}
+
+.slider input[type="radio"]:nth-child(4):checked ~ .sldBx > .slideImgs {
+  left: -1410px;
+  transition: 0.5s;
 }
 
 .gallery {
@@ -271,9 +410,14 @@ aside {
 .like img {
   border-radius: 50px;
   width: 14px;
-  padding: 0 0 2px 0;
-  margin: 0 4px 0 0;
+  padding: 0;
+  margin: 0 4px 2px 0;
   border: 0.5px solid #ddd;
+}
+
+a.likeUser {
+  color: black;
+  font-weight: 700;
 }
 
 .userEdit {
@@ -290,7 +434,6 @@ aside {
 }
 
 .editID {
-  text-decoration: none;
   font-size: 15px;
   font-weight: 630;
   color: black;
@@ -326,4 +469,130 @@ aside {
 
 aside {
   width: 319px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 50px 0 0;
+}
+
+.myProfile {
+  width: 319px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 20px;
+}
+
+.myProfile img {
+  padding-right: 8px;
+}
+
+.rcmd {
+  width: 319px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rcmd > div {
+  margin: 0 0 10px;
+}
+.rcmd a {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.line1 {
+  width: 319px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rcmdUser {
+  width: 319px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow {
+  width: 319px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px;
+  box-sizing: border-box;
+}
+
+.rcmdUser span {
+  font-size: 13px;
+}
+
+.liProfile {
+  width: 269px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.minorx2 {
+  color: rgb(126, 126, 126);
+  font-size: 13px;
+}
+
+.liProfile img {
+  margin-right: 10px;
+}
+
+.liProfile div {
+  width: 237px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+a.friendName {
+  width: 237px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 630;
+  color: black;
+}
+
+span.btn {
+  color: #0095f6;
+}
+
+.ftrBox {
+  width: 100%;
+  margin: 20px 0 10px;
+}
+
+.ftrBox li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.ftrBox li a {
+  color: rgba(126, 126, 126, 0.872);
+}
+
+footer > span {
+  color: rgba(126, 126, 126, 0.872);
+  font-size: 12px;
+}
+
+.ftrBox li:not(:last-child):after {
+  content: "∙";
+  margin: 0 0.5px;
+  color: rgb(126, 126, 126);
 }
