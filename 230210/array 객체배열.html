@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Array 객체로 배열 만들기</title>
+  </head>
+  <body>
+    <h3>Array 객체로 배열 만들기</h3>
+    <hr />
+    <script>
+      let degrees = new Array(); // 빈 배열 생성
+      degrees[0] = 15.5;
+      degrees[1] = 15.7;
+      degrees[2] = 16.4;
+      degrees[3] = 17.7;
+      degrees[4] = 19.8;
+      degrees[5] = 22.7;
+
+      let sum = 0;
+      for (let i = 0; i < degrees.length; i++) sum += degrees[i];
+      // degree라는 이름 안에 degree에 관련된 메소드가 있는 것
+
+      document.write("평균 온도는 " + sum / degrees.length + "<br>");
+    </script>
+  </body>
+</html>
