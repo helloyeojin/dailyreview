@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  width: 1400px;
+  height: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 120px 0 40px;
+}
+
+.input {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.input h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.input input {
+  height: 50px;
+  margin: 0 0 30px;
+  padding: 3px 0 3px 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: 1px solid #bdbdbd;
+  outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
+  cursor: pointer;
+}
+
+.input input:hover {
+  border: 1px solid #629eedf5;
+}
+
+.function {
+  width: 500px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0 0 50px;
+  font-weight: 700;
+}
+
+.function label {
+  padding: 0 200px 0 0;
+}
+
+.function a {
+  color: #000;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+}
+
+.accntBtn {
+  width: 500px;
+  height: 60px;
+  border: 1px solid #bdbdbd;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#logIn {
+  margin: 0 0 7px;
+  background-color: #bdbdbd;
+  color: #fff;
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+#join {
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+  line-height: 60px;
+}
