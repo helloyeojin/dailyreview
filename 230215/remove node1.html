@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>remove node</title>
+  </head>
+  <body>
+    <p>text 1</p>
+    <a href="https://www.naver.com">NAVER</a>
+    <a href="https://www.daum.net">DAUM</a>
+
+    <script>
+      //요소 노드 생성
+      const CEl = document.querySelector("p");
+      //const CEl = document.querySelector("a");
+      //querySelector는 하나만 지정이 되기 때문에 가장 상단의 a만 지정하게 됨
+      //모든 a를 다 삭제하겠다고 하면 querySelectorAll을 사용하면 됨
+      CEl.parentNode.removeChild(CEl);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컨텐츠 조작</title>
+  </head>
+  <body>
+    <p id="title">Hello, <span style="display: none">Javascript!</span></p>
+
+    <script>
+      document.getElementById("title").textContent;
+      document.getElementById("title").innerText;
+      document.getElementById("title").innerHTML;
+
+      console.log(document.getElementById("title").textContent);
+      // Hello, Javascript!
+      console.log(document.getElementById("title").innerText);
+      // Hello,
+      console.log(document.getElementById("title").innerHTML);
+      // Hello, <span style="display: none">Javascript!</span>
+      //innerHTML은 태그 안에 들어가는 모든 값을 인식
+    </script>
+  </body>
+</html>
