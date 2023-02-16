@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event4</title>
+  </head>
+  <body>
+    <button>click</button>
+
+    <script>
+      const btnE1 = document.querySelector("button");
+      /* btnE1.addEventListener("click", function() {
+      //<노드>.addEventListener("이벤트 타입", 이벤트 함수) // on 제거
+      alert("button clicked");
+    }); */
+
+      const clickEvent = () => {
+        alert("button clicked");
+      };
+      btnE1.addEventListener("click", clickEvent);
+    </script>
+  </body>
+</html>

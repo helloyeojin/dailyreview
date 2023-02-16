@@ -379,6 +379,10 @@ ul.slideImgs li {
   box-sizing: border-box;
 }
 
+.function svg {
+  margin-right: 7px;
+}
+
 .function img {
   width: 22px;
   height: 22px;
@@ -392,7 +396,7 @@ ul.slideImgs li {
   margin-right: 8px;
 }
 
-.like {
+.likes {
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -401,7 +405,7 @@ ul.slideImgs li {
   margin-bottom: 8px;
 }
 
-.like img {
+.likes img {
   border-radius: 50px;
   width: 14px;
   padding: 0;
@@ -607,6 +611,6 @@ footer > span {
   height: 30px;
   position: fixed;
   margin-top: 800px;
-  background-image: url(/images/arrow.svg);
+  background-image: url(/HW/images/arrow.svg);
   opacity: 0.5;
 }
