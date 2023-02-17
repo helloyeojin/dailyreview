@@ -274,3 +274,151 @@
 <b><span style = "background-color: #46649b">$(".txt").nextUntil(".t2")</span></b> = .txt('내용2') 다음부터 .t2('내용5') 이전까지의 요소
 
 <br><br> 이처럼 <b>여러 요소를 다중으로 선택</b>해야 할 때는 <b><u>인접 관계 선택자</u></b>를, <b>하나의 개체만 선택</b>해야 한다고 하면 <b><u>직접 선택자</u></b>를 사용하면 된다.
+
+<br><br><br>
+
+## 탐색 선택자
+
+```
+<script>
+  $(function () {
+    $("#menu li:first").css({ "background-color": "#ff0" });
+
+    $("#menu li:last").css({ "background-color": "#0ff" });
+  });
+</script>
+```
+
+```
+<body>
+  <ul id="menu">
+    <h2>dd</h2>
+    <h2>dd</h2>
+    <h2>dd</h2>
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+  </ul>
+</body>
+```
+
+<br><br><br>
+
+## 홀수 인덱스, 짝수 인덱스
+
+```
+<script>
+  $(function () {
+    $("#menu li:even") // 홀수 인덱스(짝수 제외)
+      .css({ "background-color": "#ff0" });
+
+    $("#menu li:odd") // 짝수 인덱스(홀수 제외)
+      .css({ "background-color": "#0ff" });
+  });
+</script>
+```
+
+```
+<body>
+  <ul id="menu">
+    <h2>dd</h2>
+    <h2>dd</h2>
+    <h2>dd</h2>
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+    <li>내용5</li>
+  </ul>
+</body>
+```
+
+<br><br><br>
+
+## equal, less than, greater than
+
+```
+<script>
+  $(function () {
+    $("#menu li:eq(2)")
+      .css({ "background-color": "#ff0" });
+    $("#menu li:lt(2)")
+      .css({ "background-color": "#0f9" });
+    $("#menu li:gt(2)")
+    .css({ "background-color": "#f0f" });
+  });
+</script>
+```
+
+```
+<body>
+  <ul id="menu">
+    <h2>dd</h2>
+    <h2>dd</h2>
+    <h2>dd</h2>
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+    <li>내용5</li>
+  </ul>
+</body>
+```
+
+<br>
+<b><span style = "background-color: #46649b">$("#menu li:eq(2)")</span></b>
+<br>equal = 인덱스 2
+<br><br>
+<b><span style = "background-color: #46649b">$("#menu li:lt(2)")</span></b>
+<br>less than = 인덱스 2보다 큰 인덱스 제외
+<br><br>
+<b><span style = "background-color: #46649b">$("#menu li:gt(2)")</span></b>
+<br>greater = 인덱스 2보다 작은 인덱스 제외
+
+<br><br><br>
+
+## nth-child
+
+```
+<script>
+  $(function () {
+    $("#menu li:nth-child(1)")
+    .css({ "background-color": "#ff0" });
+    $("#menu li:nth-child(3n)")
+    .css({ "background-color": "#0f9" });
+    $("#menu li:nth-last0-child(1)")
+    .css({ "background-color": "#f0f" });
+  });
+</script>
+```
+
+```
+<body>
+  <h1>탐색 선택자</h1>
+  <ul id="menu1">
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+  </ul>
+  <ul id="menu2">
+    <li>내용1</li>
+    <li>내용2</li>
+    <li>내용3</li>
+    <li>내용4</li>
+  </ul>
+</body>
+```
+
+<br>
+
+<b><span style = "background-color: #46649b">$("#menu li:nth-child(1)")</span></b>
+<br>nth-child는 0부터 시작하지 않음!
+첫번째에 해당하는 요소를 바꾸라는 뜻
+
+<b><span style = "background-color: #46649b">$("#menu li:nth-child(3n)")</span></b>
+<br>3의 배수번째 요소를 변경
+
+<b><span style = "background-color: #46649b">$("#menu li:nth-last0-child(1)")</span></b>
+<br>지정된 li라는 범위 이내에서 마지막 요소의 색을 변경

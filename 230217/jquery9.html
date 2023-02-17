@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        $("#menu li:nth-child(1)") //nth-child는 0부터 시작하지 않기 때문에 첫번째에 해당하는 요소를 바꾸라는 뜻
+          .css({ "background-color": "#ff0" });
+        $("#menu li:nth-child(3n)") //3의 배수번째 요소를 변경
+          .css({ "background-color": "#0f9" });
+        $("#menu li:nth-last0-child(1)") //지정된 li라는 범위 이내에서 마지막 요소의 색을 변경
+          .css({ "background-color": "#f0f" });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>탐색 선택자</h1>
+    <ul id="menu1">
+      <li>내용1</li>
+      <li>내용2</li>
+      <li>내용3</li>
+      <li>내용4</li>
+    </ul>
+    <ul id="menu2">
+      <li>내용1</li>
+      <li>내용2</li>
+      <li>내용3</li>
+      <li>내용4</li>
+    </ul>
+  </body>
+</html>

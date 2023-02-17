@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".upload").click(function() {
+        $(".uploadBxBg").css({"display" : "block"})
+        })
+
+        $(".uploadBxBg").click(function() {
+          $(this).css({"display" : "none"});
+        })
+      })
+      </script>
     <link rel="Stylesheet" href="instagram.css" />
   </head>
   <body>
@@ -65,7 +77,7 @@
             src="https://cdn-icons-png.flaticon.com/512/5948/5948495.png"
             alt="icons_post"
           />
-          <span>만들기</span>
+          <span class = "upload">만들기</span>
         </a>
         <a href="#">
           <img src="/HW/images/sunlight.png" alt="profile_image" />
@@ -80,6 +92,9 @@
         <span>더 보기</span>
       </a>
     </nav>
+    <div class="uploadBxBg">
+        <img class="uploadBx" src="/HW/images/upload.png"/>
+    </div>
     <section class="mainSection" id="main">
       <div class="feed">
         <div class="story">
@@ -177,23 +192,16 @@
             </div>
           </div>
           <div class="function">
-            <svg id = "likeBtn" width="27px" height="27px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="likePath" d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z" fill="#fff" stroke="#000" stroke-width="1.5"/></svg>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5948/5948565.png"
-              alt="reply"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5948/5948572.png"
-              alt="dm"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5948/5948594.png"
-              alt="bookmark"
-            />
+            <svg class = "likeBtn" width="27px" height="27px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="likePath" d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z" fill="#fff" stroke="#000" stroke-width="1.5"/></svg>
+            <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 21L15.3 19.1C15.3 19.1 14.0847 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5C20 14 19.1 15.3 19.1 15.3L21 21Z" stroke="#000000" stroke-width="1.4" ></path></g></svg>
+            <svg class = "drctMssg" width="29px" height="29px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 4L3 9.31372L10.5 13.5M20 4L14.5 21L10.5 13.5M20 4L10.5 13.5" stroke="#000000" stroke-width="1.4" ></path> </g></svg>
+            <svg class = "bookmark" fill="none" width="26px" height="30px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.476 19.461l-8.451 8.501v-22.924h16.951v22.924l-8.5-8.501z" fill="#fff" stroke="#000" stroke-width="1.8"></path>
+            </svg>
           </div>
           <div class="likes">
             <img src="/HW/images/kazuha.png" alt="kazuha" />
-            <span><a href ="https://www.instagram.com/k_a_z_u_h_a__/" class="likeUser"> k_a_z_u_h_a__</a>님 <b>외 213.9만명</b>이 좋아합니다</span>
+            <span><a href ="https://www.instagram.com/k_a_z_u_h_a__/" class="likeUser"> k_a_z_u_h_a__</a>님<span class="count"></span>이 좋아합니다</span>
           </div>
           <div class="edit">
             <div class="userEdit">
@@ -241,22 +249,15 @@
           ></video>
           <div class="function">
             <svg class = "likeBtn" width="27px" height="27px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="likePath" d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.895z" fill="#fff" stroke="#000" stroke-width="1.5"/></svg>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5948/5948565.png"
-              alt="reply"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5948/5948572.png"
-              alt="dm"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5948/5948594.png"
-              alt="bookmark"
-            />
+            <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 21L15.3 19.1C15.3 19.1 14.0847 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5C20 14 19.1 15.3 19.1 15.3L21 21Z" stroke="#000000" stroke-width="1.4" ></path></g></svg>
+            <svg class = "drctMssg" width="29px" height="29px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 4L3 9.31372L10.5 13.5M20 4L14.5 21L10.5 13.5M20 4L10.5 13.5" stroke="#000000" stroke-width="1.4" ></path> </g></svg>
+            <svg class = "bookmark" fill="none" width="26px" height="30px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.476 19.461l-8.451 8.501v-22.924h16.951v22.924l-8.5-8.501z" fill="#fff" stroke="#000" stroke-width="1.8"></path>
+            </svg>
           </div>
           <div class="likes">
             <img src="/HW/images/sunlight.png" alt="marronbread" />
-            <span><a href ="https://www.instagram.com/_chaechae_1/" class="likeUser">_chaechae_1</a>님 <b>외 170.8만명</b>이 좋아합니다</span>
+            <span><a href ="https://www.instagram.com/_chaechae_1/" class="likeUser">_chaechae_1</a>님<span class="count"></span>이 좋아합니다</span>
           </div>
           <div class="edit">
             <div class="userEdit">
@@ -383,6 +384,6 @@
       </aside>
     </section>
     <button class="pgUp" id="pgUp"></button>
-    <script src="instagram.js"></script>
+    <script src="instagram.js"></>
   </body>
 </html>
