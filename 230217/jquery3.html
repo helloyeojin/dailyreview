@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        $("#22").parent().css("border", "4px solid #f00");
+      });
+    </script>
+  </head>
+  <body>
+    <h1>인접 관계 선택자</h1>
+    <ul id="kb">
+      <li>리스트1</li>
+      <ul>
+        <li id="22">리스트22</li>
+        <li>리스트22-1</li>
+      </ul>
+      <li>리스트2</li>
+      <li>리스트3</li>
+    </ul>
+    <h2 id="kb">선택자</h2>
+  </body>
+</html>
