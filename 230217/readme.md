@@ -14,7 +14,7 @@
 ```
 
 <br>
-<span style = "background-color: lemonchiffon">$(" * ").css("border", "1px solid blue");</span>
+<b><span style = "background-color: #46649b">$(" * ").css("border", "1px solid blue");</span></b>
 
 위에서 \* 을 전체 선택자라 한다.
 
@@ -49,12 +49,12 @@
 
 <br>
 
-- id는 <span style = "background-color: lemonchiffon">#</span>, class는 <span style = "background-color: lemonchiffon">.</span>으로 선택자 지정
+- id는 <b><span style = "background-color: #46649b">#</span></b>, class는 <b><span style = "background-color: #46649b">.</span></b>으로 선택자 지정
 - 요소 선택자는 태그 지정
 - 동시 선택가능
 
-  - <span style = "background-color: lemonchiffon">$("#kb, h1")</span>
-  - <span style = "background-color: lemonchiffon">("h1#kb")</span> = h1 중에서 id값이 같은 것만 지정<br><br>
+  - <b><span style = "background-color: #46649b">$("#kb, h1")</span></b>
+  - <b><span style = "background-color: #46649b">("h1#kb")</span></b> = h1 중에서 id값이 같은 것만 지정<br><br>
 
 - <b>체이닝 기법</b>
   <br>$("#kb")
@@ -63,9 +63,9 @@
   위와 같은 식으로 하나의 id 요소에 여러가지 메소드를 적용하는 것을 체이닝 기법이라 함<br><br>
 
 - <b>선택한 요소에 지정한 스타일 적용</b>:
-  <br><span style = "background-color: lemonchiffon">$("css선택자").css("스타일 속성명", "값")</span>
+  <br><span style = "background-color: #46649b">$("css선택자").css("스타일 속성명", "값")</span>
 - <b>선택한 요소에 지정한 속성 적용</b>:
-  <br><span style = "background-color: lemonchiffon">$("css선택자").css("속성명", "값")</span>
+  <br><span style = "background-color: #46649b">$("css선택자").css("속성명", "값")</span>
 
 <br><br><br>
 
@@ -100,7 +100,7 @@
 ```
 
 <br>
-<span style = "background-color: lemonchiffon">$("#22")</span>가 선택하는 것은 "22"라는 id를 가진 '리스트22'이다. '리스트22'의 parent는 ul이므로 ul에 테두리가 둘러지게 된다.
+<b><span style = "background-color: #46649b">$("#22")</span></b>가 선택하는 것은 "22"라는 id를 가진 '리스트22'이다. '리스트22'의 parent는 ul이므로 ul에 테두리가 둘러지게 된다.
 
 <br><br>
 
@@ -143,9 +143,9 @@
 ```
 
 <br>
-<span style = "background-color: lemonchiffon">$("#22 > h1"</span>은 22라는 id를 가진 첫번째 div 밑의 <span style = "background-color: lemonchiffon">h1</span>을 가져온다.
+<b><span style = "background-color: #46649b"></b>$("#22 > h1"</span>은 22라는 id를 가진 첫번째 div 밑의 <b><span style = "background-color: #46649b">h1</span></b>을 가져온다.
 
-<br><span style = "background-color: lemonchiffon">$("#22 > section").children()</span>는 첫번째 div 내 section, 그리고 section에 속해있는 <span style = "background-color: lemonchiffon">h2('h2h2h2')와 p('ppp')</span>를 가져온다.
+<br><b><span style = "background-color: #46649b">$("#22 > section").children()</span></b>는 첫번째 div 내 section, 그리고 section에 속해있는 <b><span style = "background-color: #46649b">h2('h2h2h2')와 p('ppp')</span></b>를 가져온다.
 
 <br><br>
 
@@ -183,11 +183,11 @@
 ```
 
 <br>
-<span style = "background-color: lemonchiffon">$(".txt").prev()</span> = .txt 앞의 p('내용1')
+<b><span style = "background-color: #46649b">$(".txt").prev()</span></b> = .txt 앞의 p('내용1')
 <br><br>
-<span style = "background-color: lemonchiffon">$(".txt + p")</span> = .txt와 인접한 p('내용3')
+<b><span style = "background-color: #46649b">$(".txt + p")</span></b> = .txt와 인접한 p('내용3')
   <br>만약 $("p + .txt")를 하면 첫번째 p의 다음 txt가 선택이 됨<br><br>
-<span style = "background-color: lemonchiffon">$(".txt").next().next()</span> = .txt 다음다음 p('내용4')
+<b><span style = "background-color: #46649b">$(".txt").next().next()</span></b> = .txt 다음다음 p('내용4')
 
 <br><br>
 
@@ -226,9 +226,9 @@
 ```
 
 <br>
-<span style = "background-color: lemonchiffon">$(".txt").prevAll()</span> = .txt 앞의 모든 요소
+<b><span style = "background-color: #46649b">$(".txt").prevAll()</span></b> = .txt 앞의 모든 요소
 <br><br>
-<span style = "background-color: lemonchiffon">$(".txt").nextAll()</span> = .txt 다음의 모든 요소
+<b><span style = "background-color: #46649b">$(".txt").nextAll()</span></b> = .txt 다음의 모든 요소
 
 <br><br>
 
@@ -268,9 +268,9 @@
 ```
 
 <br>
-<span style = "background-color: lemonchiffon">$(".txt").prevUntil(".t")</span> = .t('인접 관계 선택자) 다음부터 .txt('내용2') 이전까지의 요소(역방향)
+<b><span style = "background-color: #46649b">$(".txt").prevUntil(".t")</span></b> = .t('인접 관계 선택자) 다음부터 .txt('내용2') 이전까지의 요소(역방향)
 <br><br>
 
-<span style = "background-color: lemonchiffon">$(".txt").nextUntil(".t2")</span> = .txt('내용2') 다음부터 .t2('내용5') 이전까지의 요소
+<b><span style = "background-color: #46649b">$(".txt").nextUntil(".t2")</span></b> = .txt('내용2') 다음부터 .t2('내용5') 이전까지의 요소
 
 <br><br> 이처럼 <b>여러 요소를 다중으로 선택</b>해야 할 때는 <b><u>인접 관계 선택자</u></b>를, <b>하나의 개체만 선택</b>해야 한다고 하면 <b><u>직접 선택자</u></b>를 사용하면 된다.
