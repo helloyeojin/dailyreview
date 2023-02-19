@@ -1,0 +1,23 @@
+.ftrBox {
+  width: 100%;
+  margin: 20px 0 10px;
+}
+
+.ftrBox li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.ftrBox li a {
+  color: rgb(200, 200, 200);
+}
+
+footer > span {
+  color: rgb(200, 200, 200);
+  font-size: 12px;
+}
+
+.ftrBox li:not(:last-child):after {
+  content: "∙";
+  color: rgb(200, 200, 200);
+}

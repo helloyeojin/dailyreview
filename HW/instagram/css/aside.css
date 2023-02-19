@@ -1,0 +1,125 @@
+aside {
+  width: 319px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 55px 0 0;
+  background: #fff;
+}
+
+.myProfile {
+  width: 319px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 17px;
+}
+
+.myProfile img {
+  padding-right: 8px;
+}
+
+.rcmd {
+  width: 319px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rcmd > div {
+  margin: 0 0 8px;
+}
+
+.line1 {
+  width: 319px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line1 > a {
+  font-size: 12px;
+}
+
+.rcmdUser {
+  width: 319px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow {
+  width: 319px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 8px 8px;
+  box-sizing: border-box;
+}
+
+.rcmdUser span {
+  font-size: 13px;
+}
+
+.liProfile {
+  width: 269px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.minorx2 {
+  color: rgb(126, 126, 126);
+  font-size: 13px;
+}
+
+.liProfile img {
+  margin-right: 10px;
+}
+
+.liProfile div {
+  width: 237px;
+  height: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+a.friendName {
+  width: 237px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 630;
+  color: black;
+  padding: 0 0 2px 0;
+  box-sizing: borderbox;
+}
+
+span.btn {
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 550;
+  padding: 1px 0 0;
+}
+
+.pgUp {
+  border: none;
+  background: none;
+}
+
+.pgUp {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  margin-top: 800px;
+  background-image: url("../images/arrow.svg");
+  opacity: 0.5;
+}

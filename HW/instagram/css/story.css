@@ -1,0 +1,52 @@
+.story {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 470px;
+  margin: 22px 0 15px 0;
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.story > figure {
+  margin: 0;
+  padding: 0 6px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 56px;
+  height: 84px;
+}
+
+.story figcaption {
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.storyImgBg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 59px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      to bottom left,
+      #b921ff 0%,
+      rgba(255, 15, 107, 0.929) 35%,
+      orange 60%,
+      #ffeca6 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.storyimg {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}

@@ -1,0 +1,171 @@
+.post {
+  width: 470px;
+  margin-top: 15px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user {
+  width: 100%;
+  height: 56px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userImg {
+  width: 32px;
+  height: 32px;
+  border: 0.5px solid #ddd;
+  border-radius: 50%;
+}
+
+.userStory {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(
+      to bottom left,
+      #b921ff 0%,
+      rgba(255, 15, 107, 0.929) 35%,
+      orange 60%,
+      #ffeca6 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.userName {
+  width: 380px;
+  height: 40px;
+  margin: 0 20px 0 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14.5px;
+  font-weight: 650;
+  color: black;
+}
+
+.userName a {
+  display: inline-block;
+  margin: 0 3px 0 0;
+  color: black;
+}
+
+.minor {
+  display: inline-block;
+  color: rgb(126, 126, 126);
+  font-size: 14px;
+}
+
+.ddd {
+  width: 16px;
+  height: 16px;
+  padding: 0 3px 0 4px;
+}
+
+.function {
+  padding: 0 0 6px;
+  width: 470px;
+  height: 46px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.bookmark {
+  margin: 0 0 7px;
+}
+
+.drctMssg {
+  padding: 0 0 1px;
+}
+
+.function img {
+  width: 22px;
+  height: 22px;
+}
+
+.function svg:last-child {
+  padding-left: 318px;
+}
+
+.function svg:not(:last-child) {
+  margin-right: 8px;
+}
+
+.likes {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 470px;
+  height: 18px;
+  margin-bottom: 8px;
+}
+
+.likes img {
+  border-radius: 50px;
+  width: 14px;
+  padding: 0;
+  margin: 0 4px 2px 0;
+  border: 0.5px solid #ddd;
+}
+
+a.likeUser {
+  color: black;
+  font-weight: 700;
+}
+
+.userEdit {
+  width: 470px;
+  height: 18px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.userEdit p {
+  font-size: 14px;
+}
+
+.editID {
+  font-size: 15px;
+  font-weight: 630;
+  color: black;
+  padding-right: 5px;
+}
+
+.edit > a {
+  margin-bottom: 6px;
+}
+
+.smiley {
+  width: 470px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smiley img {
+  width: 11px;
+  padding-bottom: 1px;
+  opacity: 0.5;
+}
+
+.front {
+  padding-right: 13px;
+}
+
+.hashtag {
+  color: rgb(0, 0, 123);
+  font-weight: 500;
+}

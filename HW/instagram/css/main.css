@@ -1,0 +1,14 @@
+.mainSection {
+  width: 853px;
+  float: left;
+  background-color: white;
+  margin: 0 139px 0 422px;
+  display: flex;
+  flex-direction: row;
+}
+
+.feed {
+  background: white;
+  width: 470px;
+  margin: 10px 64px 0 0;
+}

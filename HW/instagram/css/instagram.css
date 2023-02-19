@@ -1,0 +1,50 @@
+@import url("nav.css");
+@import url("main.css");
+@import url("story.css");
+@import url("post.css");
+@import url("gallery.css");
+@import url("aside.css");
+@import url("footer.css");
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  flex-direction: row;
+  position: relative;
+}
+
+video {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  padding: 0;
+  margin: 0;
+}
