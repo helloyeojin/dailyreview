@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src = ../jquery.js></script>
+  <script>
+    $(function () {
+      $(document).ready(function () {
+        var h1 = $(".img1").height();
+        console.log("ready :", h1); // ready : 값
+      });
+
+      $(window).load(function () {
+        var h2 = $(".img1").height();
+        console.log("ready :", h2); // load : 값
+      });
+    });
+
+    // NOTE:  페이지가 로드 중일 때 무엇을 보여줄 것이고, 페이지가 로드가 완료되었을 때 무엇을 보여줄 것이냐를 위의 코드들을 이용해 정할 수 있음. (로드되는 동안 뭔가의 컨텐츠를 윈도우 창 위에 띄움으로써 고객의 이탈을 방지하기 위한 목적)
+  </script>
+</head>
+<body>
+  <p>
+    <img src = "https://place-hold.it/300x300" class = "img1"/>button1
+  </p>
+  <p>내용1</p>
+  <p>
+    <button class = "btn2">button2</button>
+  </p>
+  <p>내용2</p>
+</body>
+</html>

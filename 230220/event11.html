@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src = ../jquery.js></script>
+  <script>
+    $(function () {
+      $(".meunWrap_1 a").on("click", function (e){
+      e.preventDefault();
+      
+      $(".meunWrap_1 a")
+      .css({"background-color": "#fff"})
+
+      $(this)
+      .css({"background-color": "#ff0"});
+    });
+
+      $(".meunWrap_2 a").on("click", function (e){
+      e.preventDefault();
+      
+      $(".meunWrap_2 a")
+      .css({"background-color": "#fff"})
+
+      var idx = $(".meunWrap_2 a").index(this);
+      $(".meunWrap_2 a").eq(idx)
+      .css({"background-color": "#0ff"});
+
+      $(".idxNum").text(idx); //텍스트 값 표시
+    });
+  });
+  </script>
+</head>
+<body>
+  <h2>$this</h2>
+  <ul class = "meunWrap_1">
+    <li><a href = "#">메뉴 1</a></li>
+    <li><a href = "#">메뉴 2</a></li>
+    <li><a href = "#">메뉴 3</a></li>
+  </ul>
+  <h2>Index()</h2>
+  <ul class = "meunWrap_2">
+    <li><a href = "#">메뉴 4</a></li>
+    <li><a href = "#">메뉴 5</a></li>
+    <li><a href = "#">메뉴 6</a></li>
+  </ul>  
+  <p class = "idxNum"></p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src = ../jquery.js></script>
+  <script>
+    $(function(){
+      $(".btn1").on("click", function(e){
+        e.preventDefault(); // 이 부분 주석 처리하면 css가 바뀜과 동시에 기존 창에서 네이버가 열림 = 기존 이벤트 막기
+        $(".txt1").css({"background-color" : "#ff0"});
+      });
+      $(".btn2").on("click", function(e){
+        e.preventDefault();
+        $(".txt2").css({"background-color" : "#0ff"});
+      });
+      $(".btn3").on("dblclick", function(e){
+        e.preventDefault();
+        $(".txt3").css({"background-color" : "#0f0"});
+      });
+    });
+  </script>
+</head>
+<body>
+  <p>
+    <a href = "https://www.naver.com" class = "btn1">button1</a>
+  </p>
+  <p class = "txt1">text1</p>
+  <p>
+    <a href = "https://www.naver.com" class = "btn2">button2</a>
+  </p>
+  <p class = "txt2">text2</p>
+  <p>
+    <button class = "btn3">내용3</button>
+  </p>
+  <p class = "txt3">text3</p>
+</body>
+</html>

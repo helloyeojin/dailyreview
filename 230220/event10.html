@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../jquery.js"></script>
+    <script>
+      $(function () {
+        $(document).on("keydown", keyEventFnc);
+        function keyEventFnc(e) {
+          // e라는 값을 받아와서 누를 때마다 변경되게 하겠다
+          var direct = "";
+
+          switch (e.keyCode) {
+            // 값 1 : 행위 1
+            case 37:
+              direct = "LEFT"
+              break;
+            case 38:
+              direct = "TOP"
+              break;
+            case 39:
+              direct = "RIGHT"
+              break;
+            case 40:
+              direct = "BOTTOM"
+              break;
+          }
+          // 만약 direct에 값이 들어가 있다면 user_id값을 value값으로 변경
+          if (direct) $("#user_id").val(direct);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <p><input type="text" name="user_id" id="user_id" /></p>
+  </body>
+</html>
